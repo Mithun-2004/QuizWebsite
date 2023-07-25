@@ -1,0 +1,107 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: 'Roboto', sans-serif;
+    color : #001e4d;
+}
+body{
+    background : #001e4d;
+}
+.container{
+    background-color : #fff;
+    border-radius : 15px;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    padding : 20px;
+    width : 90%;
+    max-width : 600px;
+}
+.container h2{
+    font-weight : 700;
+    margin-bottom : 20px;
+    position : relative;
+}
+.container h2::after{
+    content : "";
+    height : 2px;
+    width : 95%;
+    background-color: #001e4d;
+    position : absolute;
+    bottom : -15px;
+    left : 0;
+}
+.container p{
+    font-weight: bold;
+    margin-top : 30px;
+}
+.options{
+    display : flex;
+    flex-direction : column;
+    margin-top : 20px;
+
+}
+.option{
+    cursor : pointer;
+    margin-bottom : 10px;
+    padding : 15px;
+    background-color : #fff;
+    border-radius : 10px;
+    border : 2px solid #001e4d;
+    outline : 0;
+    text-align : left;
+    transition : 0.5s all ease;
+}
+.option:hover:not([disabled]){
+    background-color: #001e4d;
+    color : #fff;
+}
+.option:disabled{
+    cursor : auto;
+}
+.next{
+    width : 100%;
+    margin-top : 15px;
+    margin-bottom : 15px;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+#nextBtn{
+    padding : 10px 40px;
+    background-color: #001e4d;
+    color : #fff;
+    cursor : pointer;
+    border : 0;
+    outline : 0;
+    border-radius : 5px;
+}
+.result p{
+    margin-bottom : 20px;
+}
+#playAgainBtn{
+    background-color: #001e4d;
+    color : #fff;
+    cursor : pointer;
+    border : 0;
+    outline : 0;
+    border-radius : 5px;
+    padding : 12px 40px;
+    display : block;
+    margin : 0px auto;
+}
+.hide{
+    display : none;
+}
+.correct{
+    color : #fff;
+    background-color: green;
+    border : 2px solid green;
+}
+.wrong{
+    background-color: red;
+    color : #fff;
+    border : 2px solid red;
+}
